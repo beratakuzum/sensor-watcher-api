@@ -1,0 +1,93 @@
+[
+  {
+    "machine_id": "DEC1",
+    "machinename": "Decanter1",
+    "imgpath": "decanter.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "DEC2",
+    "machinename": "Decanter2",
+    "imgpath": "decanter.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "BMM",
+    "machinename": "Blow Molding machine 1",
+    "imgpath": "blow_molding_machine.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "FBC",
+    "machinename": "Fabric laser cutting",
+    "imgpath": "fabric_laser_cutting.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "ICF",
+    "machinename": "Industrial centrifugue 1",
+    "imgpath": "industrial_centrifuge.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "INM1",
+    "machinename": "Injection molding 1",
+    "imgpath": "injection_molding.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "LQP1",
+    "machinename": "Liquid packaging 1",
+    "imgpath": "liquid_packaging.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "LQP2",
+    "machinename": "Liquid packaging 2",
+    "imgpath": "liquid_packaging.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "FBC2",
+    "machinename": "Fabric laser cutting 2",
+    "imgpath": "fabric_laser_cutting.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "BMM2",
+    "machinename": "Blow molding machine 2",
+    "imgpath": "blow_molding_machine.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "DEC3",
+    "machinename": "Decanter 3",
+    "imgpath": "decanter.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "FBC3",
+    "machinename": "Fabric laser cutting 3",
+    "imgpath": "fabric_laser_cutting.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  },
+  {
+    "machine_id": "INM2",
+    "machinename": "Injection molding 2",
+    "imgpath": "injection_molding.jpg",
+    "status": "Available",
+    "location_id": "LD01"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "TEK10",
+    "sensor_name": "Temperature EK10"
+  },
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "TEK40",
+    "sensor_name": "Temperature EK40"
+  },
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "PFJ10",
+    "sensor_name": "Pressure FJ10"
+  },
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "PFJ40",
+    "sensor_name": "Pressure FJ40"
+  },
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "FFM10",
+    "sensor_name": "Flow-meter FM10"
+  },
+  {
+    "machine_id": "DEC1",
+    "sensor_id": "FFM40",
+    "sensor_name": "Flow-meter FM40"
+  },
+  {
+    "machine_id": "FBC",
+    "sensor_id": "FFM60",
+    "sensor_name": "Flow-meter FM60"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "PFJ60",
+    "sensor_name": "Pressure FJ60"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "PFJ70",
+    "sensor_name": "Pressure FJ70"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "EEC10",
+    "sensor_name": "Energyconsumption EC10"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "EEC20",
+    "sensor_name": "Energyconsumption EC20"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "EEC30",
+    "sensor_name": "Energyconsumption EC30"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "EEC40",
+    "sensor_name": "Energyconsumption EC40"
+  },
+  {
+    "machine_id": "LQP2",
+    "sensor_id": "EEC50",
+    "sensor_name": "Energyconsumption EC50"
+  },
+  {
+    "machine_id": "BMM2",
+    "sensor_id": "EEC60",
+    "sensor_name": "Energyconsumption EC60"
+  },
+  {
+    "machine_id": "BMM2",
+    "sensor_id": "EEC70",
+    "sensor_name": "Energyconsumption EC70"
+  },
+  {
+    "machine_id": "BMM2",
+    "sensor_id": "FFM50",
+    "sensor_name": "Flow-meter FM50"
+  }
+]
