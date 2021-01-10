@@ -1,12 +1,19 @@
-api:
-  build: .
-  ports:
-    - "8080:8080"
-  volumes:
-    - .:/api
-  links:
-    - db
-db:
-  image: mongo
-  ports:
-    - "27017:27017"
+version: '2'
+services:
+  sensor-watcher-image:
+    build: .
+    image: sensor-watcher-image
+    container_name: sensor-watcher-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/api
+    environment:
+      - MONGODB_CONN_STR=mongodb://host.docker.internal:27017/sensors
+    links:
+      - db
+  db:
+    image: mongo
+    container_name: mongo-db-container
+    ports:
+      - "27017:27017"
