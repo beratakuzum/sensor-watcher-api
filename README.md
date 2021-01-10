@@ -36,9 +36,9 @@ $ pip install -r requirements.txt
  ```sh
 $ export MONGODB_CONN_STR=mongodb://localhost:27017/sensors
 ```
-- In the project's folder, run the project with gunicorn http server.
+- In the project's folder, run the project:
  ```sh
-$ gunicorn run:app -b 0.0.0.0:8080
+$ python run.py
 ```
 Now the flask app is serving on **http//:0.0.0.0:8080**
 
