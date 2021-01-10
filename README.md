@@ -24,7 +24,7 @@ how you can set this value to enable the flask app connect to mongodb properly.
 
 #### 1. Install and run without docker
 **Note:** This step assumes you have alrady installed MongoDB on your system.
-- Firstly, create a virtual environment outside project's folder and install dependencies.
+- Firstly, create a virtual environment outside the project's folder and install the dependencies.
  ```sh
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
@@ -59,7 +59,8 @@ $ docker build -t sensor-watcher-image .
 ```sh
 $ docker run --name sensor-watcher-container --env MONGODB_CONN_STR='mongodb://host.docker.internal:27017/sensors' -d -p 8080:8080 sensor-watcher-image
 ```
-**Note:** When you specify mongodb host as **host.docker.internal** you basically tell the container to look for mongodb outside the container within the same host.
+**Note:** When you specify mongodb host as **host.docker.internal** as we did above in the command, 
+you basically tell the container to look for mongodb outside the container within the same host.
 
 - Right now the only thing left for this choice of installation is inserting the sample data into MongoDB if you haven't done it yet. We are going to run the **sync_data_to_mongo.py** script inside our **sensor-watcher-container** we just created.
 ```sh
@@ -74,7 +75,8 @@ $ python sync_data_to_mongo.py
 ```sh
 $ docker-compose up -d
 ```
-- Since MongoDB container is also running in our computer now, we can insert the sample data in our db. We are going to run the **sync_data_to_mongo.py** script inside our **sensor-watcher-container** we just created.
+- Since MongoDB container is also running in our computer now, we can insert the sample data in into our db. 
+We are going to run the **sync_data_to_mongo.py** script inside our **sensor-watcher-container** we just created.
 ```sh
 $ docker exec -it sensor-watcher-container /bin/bash
 $ cd src/scripts
