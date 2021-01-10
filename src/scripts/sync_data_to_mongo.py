@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-mongo_connection_string = os.getenv("MONGODB_CONN_STR", "mongodb://host.docker.internal:27017/sensors")
+mongo_connection_string = os.getenv("MONGODB_CONN_STR")
 db = MongoClient(mongo_connection_string).get_database()
 
 with open('./data/Sensors.json') as json_file:
