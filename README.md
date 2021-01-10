@@ -40,7 +40,7 @@ $ export MONGODB_CONN_STR=mongodb://localhost:27017/sensors
  ```sh
 $ python run.py
 ```
-Now the flask app is serving on **http//:0.0.0.0:8080**
+Now the flask app is serving on **http//:0.0.0.0:5000**
 
 - In order to insert the sample data into mongodb, you need to run the  **sync_data_to_mongo.py** script. Run this script as:
  ```sh
@@ -55,9 +55,9 @@ $ python sync_data_to_mongo.py
 ```sh
 $ docker build -t sensor-watcher-image .
 ```
- - Then run the container with this command and the flask app will be serving on **http://0.0.0.0:8080**
+ - Then run the container with this command and the flask app will be serving on **http://0.0.0.0:5000**
 ```sh
-$ docker run --name sensor-watcher-container --env MONGODB_CONN_STR='mongodb://172.17.0.1:27017/sensors' -d -p 8080:8080 sensor-watcher-image
+$ docker run --name sensor-watcher-container --env MONGODB_CONN_STR='mongodb://172.17.0.1:27017/sensors' -d -p 5000:5000 sensor-watcher-image
 ```
 **Note:** When you specify mongodb host as **172.17.0.1** as we did above in the command, 
 you basically tell the container to look for mongodb outside the container within the same host.
@@ -75,7 +75,7 @@ $ python sync_data_to_mongo.py
 ```sh
 $ docker-compose up -d
 ```
-- The flask app is serving on **http://0.0.0.0:8080**
+- The flask app is serving on **http://0.0.0.0:5000**
 - Since MongoDB container is also running in our computer now, we can insert the sample data in into our db. 
 We are going to run the **sync_data_to_mongo.py** script inside our **sensor-watcher-container** we just created.
 ```sh
