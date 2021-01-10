@@ -87,7 +87,7 @@ $ python sync_data_to_mongo.py
 ```sh
 $ pytest
 ```
-**Note:** If you installed the project with docker, you have run this command inside the container as: 
+**Note:** If you installed the project with docker, you have to run this command inside the container as: 
 
 ```sh
 $ docker exec -it sensor-watcher-container /bin/bash
