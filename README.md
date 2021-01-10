@@ -13,7 +13,7 @@ We need to insert sample data into MongoDB so that our endpoints can reach them.
 This script reads the sample data files that are in **src/scripts/data** folder, preprocesses them, inserts the data into MongoDB and sets the required database indexes.
 We tell below in the next sections how you can run this script.
 
-###  How to install and run?
+##  How to install and run?
 You can install the project with or without docker. Make your choice.
 - If you don't want to install it with docker, you can choose the first option. This option assumes that you have already installed mongodb on your system.
 - If you want to install it with docker and you already have MongoDB on your system, you can choose the second option.
@@ -81,4 +81,15 @@ We are going to run the **sync_data_to_mongo.py** script inside our **sensor-wat
 $ docker exec -it sensor-watcher-container /bin/bash
 $ cd src/scripts
 $ python sync_data_to_mongo.py
+```
+##  How to run the tests?
+- Some of the integration tests requires the sample data to be inserted into MongoDB. After making sure you have the sample data in MongoDB, you can just run this command inside the project's top folder to run the tests: 
+```sh
+$ pytest
+```
+**Note:** If you installed the project with docker, you have run this command inside the container as: 
+
+```sh
+$ docker exec -it sensor-watcher-container /bin/bash
+$ pytest
 ```
