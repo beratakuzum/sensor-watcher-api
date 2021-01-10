@@ -3,7 +3,7 @@
 sensor-watcher-api is a REST API project to calculate the difference between moving averages of sensor values of two different periods. The project uses MongoDB as the database solution to retrieve data.
 
 ### Core dependencies
-  - Python 3.7.3
+  - Python 3.7
   - Flask
   - MongoDB
 
