@@ -57,9 +57,9 @@ $ docker build -t sensor-watcher-image .
 ```
  - Then run the container with this command and the flask app will be serving on **http://0.0.0.0:8080**
 ```sh
-$ docker run --name sensor-watcher-container --env MONGODB_CONN_STR='mongodb://host.docker.internal:27017/sensors' -d -p 8080:8080 sensor-watcher-image
+$ docker run --name sensor-watcher-container --env MONGODB_CONN_STR='mongodb://172.17.0.1:27017/sensors' -d -p 8080:8080 sensor-watcher-image
 ```
-**Note:** When you specify mongodb host as **host.docker.internal** as we did above in the command, 
+**Note:** When you specify mongodb host as **172.17.0.1** as we did above in the command, 
 you basically tell the container to look for mongodb outside the container within the same host.
 
 - Right now the only thing left for this choice of installation is inserting the sample data into MongoDB if you haven't done it yet. We are going to run the **sync_data_to_mongo.py** script inside our **sensor-watcher-container** we just created.
