@@ -9,7 +9,7 @@ class Config(object):
     DEBUG = False
     TESTING = False
     MONGODB_CONN_STR = os.getenv("MONGODB_CONN_STR")
-    SERVER_NAME = "0.0.0.0:8080"
+    SERVER_NAME = "0.0.0.0:5000"
 
 
 class ProductionConfig(Config):

@@ -5,7 +5,7 @@ services:
     image: sensor-watcher-image
     container_name: sensor-watcher-container
     ports:
-      - "8080:8080"
+      - "5000:5000"
     volumes:
       - .:/api
     environment:
