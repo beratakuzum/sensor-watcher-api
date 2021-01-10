@@ -41,5 +41,4 @@ def create_app():
 
     # register custom error handler
     init_error_handler(app)
-    logging.info("server_name: " + app.config['SERVER_NAME'])
     return app

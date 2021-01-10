@@ -26,7 +26,7 @@ how you can set this value to enable the flask app connect to mongodb properly.
 **Note:** This step assumes you have alrady installed MongoDB on your system.
 - Firstly, create a virtual environment outside the project's folder and install the dependencies.
  ```sh
-$ virtualenv -p python3 venv
+$ virtualenv -p python3.7 venv
 $ source venv/bin/activate
 $ cd sensor-watcher-api/
 $ pip install -r requirements.txt
