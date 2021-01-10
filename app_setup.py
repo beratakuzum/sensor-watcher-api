@@ -29,8 +29,12 @@ def create_app():
     cfg = import_string(f'config.{config_class}')()
     app.config.from_object(cfg)
 
+    mongo_conn_str = app.config['MONGODB_CONN_STR']
+    if not mongo_conn_str:
+        raise Exception("MONGODB_CONN_STR not provided as environment variable")
+
     # register_db
-    app.mongo_db = MongoDB(app.config['MONGODB_CONN_STR'])
+    app.mongo_db = MongoDB(mongo_conn_str)
 
     # register bluprints
     app.register_blueprint(sensors_bp, url_prefix='/sensors')
