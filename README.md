@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
  ```sh
 $ export MONGODB_CONN_STR=mongodb://localhost:27017/sensors
 ```
-- In the project's top folder, run the project with gunicorn http server.
+- In the project's folder, run the project with gunicorn http server.
  ```sh
 $ gunicorn run:app -b 0.0.0.0:8080
 ```
@@ -50,7 +50,7 @@ $ python sync_data_to_mongo.py
 
 #### 2. Install and run with docker build
 **Note:** This step assumes you have already installed MongoDB on your system.
- - Move to the project's top folder and build the image with this command:
+ - Move to the project's folder and build the image with this command:
 
 ```sh
 $ docker build -t sensor-watcher-image .
@@ -70,7 +70,7 @@ $ python sync_data_to_mongo.py
 ```
 #### 3. Install and run with docker compose
 **Note:** If you currently don't have MongoDB on your system, this option is suitable for you. You can install MongoDB along with the flask application by using docker-compose.
- - Move to the project's top folder and run this command and the flask app and mongodb containers will run.
+ - Move to the project's folder and run this command and the flask app and mongodb containers will run.
 
 ```sh
 $ docker-compose up -d
@@ -84,7 +84,7 @@ $ cd src/scripts
 $ python sync_data_to_mongo.py
 ```
 ##  How to run the tests?
-- Some of the integration tests requires the sample data to be inserted into MongoDB. After making sure you have the sample data in MongoDB, you can just run this command inside the project's top folder to run the tests: 
+- Some of the integration tests requires the sample data to be inserted into MongoDB. After making sure you have the sample data in MongoDB, you can just run this command inside the project's folder to run the tests: 
 ```sh
 $ pytest
 ```
