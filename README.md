@@ -96,7 +96,7 @@ $ pytest
 ```
 
 # API Documentation
-### Weekly Moving Average Difference
+### 1. Weekly Moving Average Difference
 Calculates the average difference between moving average of week i and week i+1
 #### Request
 ```
@@ -119,7 +119,7 @@ Body: {
 ```
 
 
-### Moving Average Difference of Two Periods
+### 2. Moving Average Difference of Two Periods
 #### Request
 ```
 Method: POST
