@@ -11,7 +11,7 @@ services:
     environment:
       - MONGODB_CONN_STR=mongodb://host.docker.internal:27017/sensors
     links:
-      - db
+      - mongodb
   mongodb:
     image: mongo
     container_name: mongo-db-container
