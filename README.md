@@ -94,3 +94,59 @@ $ pytest
 $ docker exec -it sensor-watcher-container /bin/bash
 $ pytest
 ```
+
+# API Documentation
+### Weekly Moving Average Difference
+Calculates the average difference between moving average of week i and week i+1
+#### Request
+```
+Method: GET
+Url: /sensors/moving-average-weekly
+params:
+    sensor-id,
+    date
+```
+###### Example Request
+```
+GET  http://0.0.0.0:5000/sensors/moving-average-weekly?sensor-id=PFJ40&date=03/9/2020
+```
+###### Successful Response
+```
+Response Code: 200
+Body: {
+    "difference": <difference_value>
+}
+```
+
+
+### Moving Average Difference of Two Periods
+#### Request
+```
+Method: POST
+Url: /sensors/moving-average-period
+Body:{
+    "date start-Period 1": <date_start_period_1>,
+    "date end-Period 1": <data_end_period_1>,
+    "date start-Period 2": <date_start_period_2>,
+    "date end-Period 2": <date_end_period_2>",
+    "sensor-id": <sensor_id>
+}
+```
+###### Example Request
+```
+POST  http://0.0.0.0:5000/sensors/moving-average-period
+Body:{
+    "date start-Period 1": "01/09/2020 21:00",
+    "date end-Period 1": "03/09/2020 21:00",
+    "date start-Period 2": "10/09/2020 10:00",
+    "date end-Period 2": "12/09/2020 11:23",
+    "sensor-id": "TEK40"
+}
+```
+###### Successful Response
+```
+Response Code: 200
+Body: {
+    "difference": <difference_value>
+}
+```
