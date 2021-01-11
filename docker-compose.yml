@@ -9,10 +9,10 @@ services:
     volumes:
       - .:/api
     environment:
-      - MONGODB_CONN_STR=mongodb://172.17.0.1:27017/sensors
+      - MONGODB_CONN_STR=mongodb://host.docker.internal:27017/sensors
     links:
       - db
-  db:
+  mongodb:
     image: mongo
     container_name: mongo-db-container
     ports:
